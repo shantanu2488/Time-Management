@@ -22,10 +22,10 @@ import Login from './src/Components/Login';
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
+     
+      <Routes/> 
         
-        <Routes/>
-      </View>
+     
 
     );
   }
