@@ -10,23 +10,18 @@ import {
   TextInput,
   Image,
 } from 'react-native';
+import {Provider} from 'react-redux';
 
-//import Header from './components/Header';
-//import Calendar from './components/Calendar';
-//import Hamburger from './components/Hamburger';
 import Routes from './src/Components/Routes';
-import Signup from './src/Components/Signup';
-import Login from './src/Components/Login';
-//import { Router } from 'react-native-router-flux';
+import store from './src/config/store';
+
 
 export default class App extends Component {
-  render() {
+  render() { 
     return (
-     
-      <Routes/> 
-        
-     
-
+      <Provider store={store}>
+      <Routes />
+      </Provider>
     );
   }
 }
