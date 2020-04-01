@@ -19,18 +19,18 @@ import Signup from './Signup';
 
 export default class Login extends Component {
 
-  Signup() {
-    Actions.Signup()
+  signup(){
+    Actions.signup();
   }
 
-  render() {
+   render() {
     return (
       <View style={styles.container}>
         <Logo />
         <Form type="Login"/>
         <View style={styles.signuptextCont}>
           <Text style={styles.signuptext}>Don't have an account yet? </Text>
-          <TouchableOpacity onPress={this.Signup}><Text style={styles.signupbutton}>Signup</Text></TouchableOpacity>
+          <TouchableOpacity onPress={this.signup}><Text style={styles.signupbutton}>Signup</Text></TouchableOpacity>
         </View>
       </View>
     )
