@@ -17,20 +17,19 @@ import Logo from './Logo';
 import Form from './Form';
 
 export default class Login extends Component {
-   Login(){
-     Actions.Login()
-   }
   
+  goBack(){
+    Actions.pop();
+  }
+
   render (){
-       
-    
-    return(
+      return(
            <View style={styles.container}>
                <Logo/>
               <Form type="Signup"/>
               <View style={styles.signuptextCont}>
                   <Text style={styles.signuptext}>Already have a account ? </Text>
-                  <TouchableOpacity onPress={this.Login}><Text style={styles.signupbutton}>Sign in</Text></TouchableOpacity>
+                  <TouchableOpacity onPress={this.goBack}><Text style={styles.signupbutton}>Sign in</Text></TouchableOpacity>
               </View>
            </View>
        )
