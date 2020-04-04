@@ -11,22 +11,26 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import { Field, reduxForm } from 'redux-form'
 import { Actions } from 'react-native-router-flux';
 
 import Logo from './Logo';
 import Form from './Form';
 
-export default class Login extends Component {
+class Signup extends Component {
   
   goBack(){
     Actions.pop();
   }
 
+ 
   render (){
       return(
            <View style={styles.container}>
                <Logo/>
               <Form type="Signup"/>
+              <Field name="name" 
+                     component= {this.renderTextInput} />
               <View style={styles.signuptextCont}>
                   <Text style={styles.signuptext}>Already have a account ? </Text>
                   <TouchableOpacity onPress={this.goBack}><Text style={styles.signupbutton}>Sign in</Text></TouchableOpacity>
@@ -66,3 +70,7 @@ const styles = StyleSheet.create({
       }
 
 });
+
+export default reduxForm({
+  form: "register"
+}) (Signup)
