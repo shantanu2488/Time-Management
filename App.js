@@ -1,15 +1,6 @@
 
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  Button,
-  TextInput,
-  Image,
-} from 'react-native';
+
 import {Provider} from 'react-redux';
 import persist from './src/config/store';
 import Main from './src/Main';
