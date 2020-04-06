@@ -15,7 +15,7 @@ export default class logo extends Component {
     render(){
         return(
             <View style={styles.container}>
-            <Image source={require('./1.png')} style={styles.image}
+            <Image source={require('/home/shantanu/VT/src/Images/1.png')} style={styles.image}
             />
             <Text style={styles.logotext}> Health Management</Text>
 
