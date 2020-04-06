@@ -1,15 +1,7 @@
 import React , { Component } from 'react';
 import {
   StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  Button,
-  TextInput,
-  Image,
-  TouchableOpacity,
-} from 'react-native';
+  } from 'react-native';
 
 import {connect} from 'react-redux';
 import Routes from './Components/Routes';
@@ -17,6 +9,7 @@ import Routes from './Components/Routes';
 class Main extends Component {
   
  render (){
+  
       return(
         
 
@@ -33,4 +26,9 @@ const styles = StyleSheet.create({
            }
 });
 
-export default connect(null, null)(Main)
+mapStateToProps = state => ({
+  authData: state.authReducer.authData
+})
+
+export default connect(mapStateToProps, null)(Main)
+
