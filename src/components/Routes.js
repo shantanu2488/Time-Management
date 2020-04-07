@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import{ Router, Stack, Scene} from 'react-native-router-flux';
 
-import Login from '/home/shantanu/VT/src/Pages/Login';
-import Signup from '/home/shantanu/VT/src/Pages/Signup';
+import Login from '/home/shantanu/VT/src/pages/Login';
+import Signup from '/home/shantanu/VT/src/pages/Signup';
 
 export default class Routes extends Component  {
     render() {
