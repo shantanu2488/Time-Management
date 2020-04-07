@@ -1,18 +1,8 @@
 import React, { Component } from 'react';
-import {
-    StyleSheet,
-    ScrollView,
-    View,
-    Text,
-    StatusBar,
-    Button,
-    TextInput,
-    Image,
-    TouchableOpacity
-} from 'react-native';
+import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
 
 export default class Form extends Component {
-   
+      
     render() {
         return (
             <View style={styles.container}>

@@ -1,23 +1,13 @@
 import React , { Component } from 'react';
-import {
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  Button,
-  TextInput,
-  Image,
-} from 'react-native';
+import { StyleSheet, View, Text, Image } from 'react-native';
 
 
 export default class logo extends Component {
     render(){
         return(
             <View style={styles.container}>
-            <Image source={require('/home/shantanu/VT/src/Images/1.png')} style={styles.image}
-            />
-            <Text style={styles.logotext}> Health Management</Text>
+            <Image source={require('/home/shantanu/VT/src/images/1.png')} style={styles.image}/>
+            <Text style={styles.logotext}> Time Management</Text>
 
             </View>
 
